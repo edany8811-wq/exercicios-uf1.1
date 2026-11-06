@@ -86,15 +86,15 @@ Respondam às seguintes questões por palavras vossas:
 
 1. A diferença entre `name` e `id`:
    Qual é o papel do atributo `id` e do atributo `name` num campo de formulário? O que acontece aos dados introduzidos pelo utilizador quando um campo não tem o atributo `name`?
-   Resposta: [Preencher]
+   Resposta: O id é a identidade do campo dentro da página: tem de ser único e serve para ligar coisas dentro do nosso próprio HTML — por exemplo, a <label for="nome"> liga-se ao campo através do id="nome", e as âncoras do menu também saltam para um id. O name tem outra função: é o nome com que os dados viajam quando o formulário é enviado — o servidor recebe pares de name=valor (por exemplo, regime=pos-laboral). Quando um campo não tem o atributo name, o que o utilizador escreveu não é enviado: o navegador ignora esse campo no momento do envio, como se nem existisse. Resumindo: o id é para a página, o name é para os dados.
 
 2. Rótulos e acessibilidade:
    Porque é que colocar apenas um `placeholder` não substitui uma etiqueta `<label>`? Que comportamento útil acontece no navegador quando um utilizador clica em cima do texto de uma `<label>` corretamente configurada?
-   Resposta: [Preencher]
+   Resposta: [O placeholder é apenas uma dica cinzenta escrita dentro do campo, que desaparece assim que começamos a escrever — a meio do preenchimento, a pessoa já não vê o que lhe foi pedido. Além disso, os leitores de ecrã usados por pessoas cegas nem sempre anunciam o placeholder e o texto cinzento tem pouco contraste, o que dificulta a leitura a quem tem baixa visão. A <label> é uma etiqueta permanente, sempre visível e corretamente associada ao campo. E há um comportamento muito útil: quando a label está bem configurada (com o for igual ao id do campo), clicar no texto da etiqueta faz o cursor saltar diretamente para dentro do campo — e numa checkbox ou num rádio, clicar no texto até marca a opção, o que ajuda muito em ecrãs pequenos.]
 
 3. Rádios vs Checkboxes:
    Em que circunstâncias devemos utilizar botões de rádio (`type="radio"`) e em que casos devemos optar por caixas de verificação (`type="checkbox"`)? Qual é a regra técnica para que vários botões de rádio pertençam ao mesmo grupo de escolha exclusiva?
-   Resposta: [Preencher]
+   Resposta: [O placeholder é apenas uma dica cinzenta escrita dentro do campo, que desaparece assim que começamos a escrever — a meio do preenchimento, a pessoa já não vê o que lhe foi pedido. Além disso, os leitores de ecrã usados por pessoas cegas nem sempre anunciam o placeholder e o texto cinzento tem pouco contraste, o que dificulta a leitura a quem tem baixa visão. A <label> é uma etiqueta permanente, sempre visível e corretamente associada ao campo. E há um comportamento muito útil: quando a label está bem configurada (com o for igual ao id do campo), clicar no texto da etiqueta faz o cursor saltar diretamente para dentro do campo — e numa checkbox ou num rádio, clicar no texto até marca a opção, o que ajuda muito em ecrãs pequenos.]
 
 ---
 

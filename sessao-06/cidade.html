@@ -22,7 +22,7 @@
             <li><a href="#visitar">O que visitar?</a></li>
             <li><a href="#monumentos">monumentos</a></li>
             <li><a href="#ditado">Ditados</a></li>
-            <li><a href="#sugestões">sugestões</a></li>
+            <li><a href="#sugestoes">sugestões</a></li>
     </ul>
     </nav>
 
@@ -112,12 +112,12 @@
 <p>Ditado popular</p>
 </article>
 
-<section id="sugestões">
+<section id="sugestoes">
 <!-- Essa é a seção sobre sugestões -->
  <h2>Partilhe uma sugestão sobre a cidade:</h2>
  <p>Sugere uma atividade ou lugar que você gostaria de ver na cidade.</p>
 
- <form action="processar-sugestões.php" method="post">
+ <form action="#processar-sugestões.php" method="post">
     <fieldset>
         <legend>A sua identificação</legend>
     <p>
@@ -135,11 +135,13 @@
         <input type="tel" id="contacto" name="contacto" required placeholder="Ex.: 9999999">
     </p>
 </fieldset>
+
+<fieldset>
     <legende>Detalhes da recomendação</legende>
 <p>
     <label for="categoria">tipo de local</label> <br/>
     <select id="categoria">categoria
-    <opition value="Monumento" selected>Monumento</opition>
+    <option value="Monumento" selected>Monumento</option>
     <option value="Natureza">Natureza</option>
     <option value="Restaurante">Restaurante</option>
     <option value="Gastronomia">Gastronomia</option>
@@ -149,10 +151,10 @@
 
 <p>Você é?</p>
 <p>
-    <input type="radio" id="perfil-Morador" name="Morador local"/>
+    <input type="radio" id="perfil-Morador" name="perfil"/>
     <label for="Perfil-Morador">Morador local</label>
 
-    <input type="radio" id="perfil-Turista" name="Turista"/>
+    <input type="radio" id="Perfil-Turista" name="perfil"/>
     <label for="Perfil-Turista">Turista</label>
 </p>
 
@@ -167,8 +169,8 @@
     ></textarea>
 </p>
 <label for="autorização">Autorizo a publicação da minha sugestão nesta página</label>
-        <input id="autorização" name="autorização" type="checkbox"/>
-
+        <input id="autorizo" name="autorizo" type="checkbox"/>
+</fieldset>
         <button type="submit">Enviar</button>
         <button type="resert">Limpar</button>
       </p>

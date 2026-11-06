@@ -6,6 +6,7 @@
   </head>
 
   <body>
+    <header>
     <h1>Oficina de Olaria Tradicional de Barcelos.</h1>
     <p>
       A olaria e o figurado de Barcelos são duas das mais ricas expressões da
@@ -22,11 +23,12 @@
     <nav>
       <ul>
         <li><a href="#workshops">Workshops</a></li>
-        <li><a href="#horários">horários</a></li>
-        <li><a href="#inscrição">Inscrições</a></li>
+        <li><a href="#horarios">horários</a></li>
+        <li><a href="#inscricao">Inscrições</a></li>
         <li><a href="#contactos">Contactos</a></li>
       </ul>
     </nav>
+    </header>
 
     <main>
       <section id="workshops">
@@ -72,7 +74,7 @@
         </article>
       </section>
 
-      <section id="horários">
+      <section id="horarios">
         <!-- sessão de horários -->
         <h2>Horários e Modalidades</h2>
      <table border="1">
@@ -101,10 +103,10 @@
      </table>
       </section>
 
-      <section id="inscrição">
+      <section id="inscricao">
         <!-- sessão de inscrição -->
 <h2><strong>Formulário de Pré-Inscrição.</strong></h2>
-<form action="processar-inscrição.php" method="post">
+<form action="#processar-inscrição.php" method="post">
     <fieldset>
         <legend>Dados pessoais do formando:</legend>
         <p>
@@ -137,6 +139,7 @@
 
 
         <fieldset>
+          <legend>Disponibilidade</legend>
        <p>Regime de frequência:</p>
        <!-- Adicione os campos de seleção de regime e dias disponíveis aqui -->
 <p>
@@ -169,7 +172,13 @@
   <input type="checkbox" id="autorizo" name="autorizo" value="sim">
   <label for="autorizo">Autorizo a receção da confirmação de vaga por e-mail.</label>
 </p> 
+
 </fieldset>
+
+<p>
+<button type="submit">Enviar</button>
+        <button type="resert">Limpar</button>
+</p>
 
       </section>
       
@@ -178,8 +187,12 @@
         <!-- sessão de contactos -->
         <h2><strong>Contactos da Oficina</strong></h2>
         <p>Morada: Largo da Feira, n.º 24, Barcelos</p>
-        <p>Correio eletrónico: olaria@artesanatobarcelos.pt</p>
+        <p>Correio eletrónico:<a href="olaria@artesanatobarcelos.pt">"olaria@artesanatobarcelos.pt</a></p>
         <a href="https://artesanatobarcelos.pt" target="_blank" rel="noreferrer noopener">Portal informativo</a>
+      
+      
+
+      </form>
       </section>
     </main> 
 
