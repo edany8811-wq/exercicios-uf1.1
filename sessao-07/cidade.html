@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A MINHA CIDADE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Descubra a Praia, capital de Cabo Verde: praias, o Plateau histórico, música e gastronomia. Visite os nossos cantos e partilhe a sua sugestão."
+    />
+    <meta name="author" content="Daniela Tavares" />
+    <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="imagens/cidade.svg"
+        alt="Cidade de Santiago"
+        width="240px"
+        height="160px"
+      />
+      <h1><strong>A MINHA CIDADE</strong></h1>
+
+      <nav>
+        <ul>
+          <li><a href="#onde-fica">Onde fica?</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#visitar">O que visitar?</a></li>
+          <li><a href="#monumentos">monumentos</a></li>
+          <li><a href="#ditado">Ditados</a></li>
+          <li><a href="#sugestoes">sugestões</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="onde-fica">
+        <!-- Essa é a seção sobre a cidade -->
+        <h2>Onde fica?</h2>
+        <p>Fica na ilha de <em>Santiago</em> em Cabo Verde.</p>
+        <a
+          href="https://www.google.com/maps/place/praia,+Cabo+Verde/@15.0333333,-23.5,7z/data=!3m1!4b1!4m6!3m5!1s0xec1c9f8e2d8a7f:0x9c6e2e2e2e2e2e2e!8m2!3d15.0333333!4d-23.5!16zL20vMDJwZzA?entry=ttu"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Veja no Google Maps</a
+        >
+        <a
+          href="https://www.cmpraia.cv/"
+          target="_blank"
+          rel="noreferrer noopener"
+          >Portal da Câmara Municipal da Praia</a
+        >
+      </section>
+
+      <section id="historia">
+        <!-- Essa é a seção sobre história -->
+        <h2>Pelo que é conhecida?</h2>
+        <p>
+          É conhecida por sert o principal centro político,econômico e
+          administrativo do país.
+        </p>
+        <p>
+          Aqui recebemos toda a gente com muita <span lang="kea">ligria</span>.
+        </p>
+      </section>
+
+      <section id="visitar">
+        <!-- Essa é a seção sobre o que visitar -->
+        <h2>oque visitar?</h2>
+        <ul>
+          <li><abbr title="plateu">Riba Praia</abbr></li>
+          <li><strong>Sucupira</strong></li>
+          <li><strong>Kebra Kanela</strong></li>
+          <li><strong>Prainha</strong></li>
+          <li><strong>Farol</strong></li>
+          <li><strong>Ilheu</strong></li>
+        </ul>
+      </section>
+
+      <section id="monumentos">
+        <!-- Essa é a seção sobre monumentos -->
+        <h2>Principais monumentos</h2>
+        <table>
+          <caption>
+            Lista dos principais monumentos
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Monumento</th>
+              <th scope="col">construção</th>
+              <th scope="col">século</th>
+              <th scope="col">Estilo</th>
+              <th scope="col">Classificação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                Palácio da Presidência (antiga casa do governador português)
+              </th>
+              <td>1850</td>
+              <td>XIX</td>
+              <td>Neoclássico</td>
+              <td>Patrimônio Cultural</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Pró-Catedral de Nossa Senhora da Graça</th>
+              <td>1850</td>
+              <td>XIX</td>
+              <td>Neoclássico</td>
+              <td>Patrimônio Cultural</td>
+            </tr>
+
+            <tr>
+              <th scope="row">
+                Câmara Municipal da Praia (na Praça Alexandre Albuquerque)
+              </th>
+              <td>1850</td>
+              <td>XIX</td>
+              <td>Neoclássico</td>
+              <td>Patrimônio Cultural</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="ditado">
+        <!-- Essa é a seção sobre ditados -->
+        <article>
+          <h2>Ditado popular</h2>
+          <blockquote>Ka bu kuspi pa riba, el ta kai na bu kara.</blockquote>
+          <p>Ditado popular</p>
+        </article>
+      </section>
+
+      <section id="sugestoes">
+        <!-- Essa é a seção sobre sugestões -->
+        <h2>Partilhe uma sugestão sobre a cidade:</h2>
+        <p>Sugere uma atividade ou lugar que você gostaria de ver na cidade.</p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>A sua identificação</legend>
+            <div>
+              <label for="nome">Nome:</label><br />
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Ex.: Maria Silva"
+                autofocus
+                minlength="3"
+                maxlength="60"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Ex.: maria@email.com"
+              />
+            </div>
+
+            <div>
+              <label for="contacto">Contacto:</label><br />
+              <input
+                type="tel"
+                id="contacto"
+                name="contacto"
+                required
+                placeholder="Ex.: 9999999"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalhes da recomendação</legend>
+            <div>
+              <label for="categoria">Tipo de local</label><br />
+              <select id="categoria" name="categoria" required>
+                <option value="Monumento" selected>Monumento</option>
+                <option value="Natureza">Natureza</option>
+                <option value="Restaurante">Restaurante</option>
+                <option value="Gastronomia">Gastronomia</option>
+                <option value="Museu">Museu</option>
+              </select>
+            </div>
+
+            <p>Você é?</p>
+            <div>
+              <input
+                type="radio"
+                id="perfil-morador"
+                name="perfil"
+                velue="morador"
+              />
+              <label for="perfil-morador">Morador local</label><br />
+
+              <input
+                type="radio"
+                id="perfil-Turista"
+                name="perfil"
+                velue="turista"
+              />
+              <label for="perfil-Turista">Turista</label><br />
+            </div>
+
+            <div>
+              <label for="descricao">Descreva o local sugerido</label><br />
+              <textarea
+                id="descricao"
+                name="descricao"
+                placeholder="Digite a sua sugestao aqui..."
+                rows="6"
+                cols="40"
+                required
+                minlength="20"
+                maxlength="800"
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="autorizacao"
+                >Autorizo a publicação da minha sugestão nesta página</label
+              >
+              <input id="autorizo" name="autorizo" type="checkbox" required />
+            </div>
+          </fieldset>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button><br />
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; Daniela Tavares 2026.</footer>
+  </body>
+</html>
