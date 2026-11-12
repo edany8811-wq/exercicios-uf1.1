@@ -1,0 +1,105 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.6;
+  background-color: #f8fafc;
+  color: #334155;
+}
+
+h1,
+h2,
+h3 {
+  color: #0f172a;
+}
+
+h2 {
+  border-bottom: 1px solid black;
+  padding-bottom: 0, 3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+}
+
+th {
+  background-color: e2e8f0;
+  color: #0f172a;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cartao {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.curiosidade {
+  border-left: 6px solid #dc2626;
+  background-color: #eff6ff;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+.botao {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao-secundario {
+  background-color: #e2e8f0;
+  color: #ff0000;
+}
+
+.botao:hover {
+  background-color: #1e3a8a;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0.4rem 0.5rem;
+  font: inherit;
+}
+
+#sugestoes,
+#reserva {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0284c7;
+}
