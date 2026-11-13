@@ -112,17 +112,113 @@
         <tbody>
             <tr>
                 <th scope="row">Farol da Barra:</th>
-                <td>Farol da Barra:Farol da Barra:</td>
-                <td>Inaugurado em 1893</td>
-                <td> Altura de 62 metros</td>
-                <td>Alcance de 23 milhas náuticas</td>
+                <td>Ílha (Aveiro)</td>
+                <td> 1893</td>
+                <td>62 metros</td>
+                <td>23 milhas náuticas</td>
             </tr>
 
             <tr>
-                <th scope="row"></th>
+                <th scope="row">Farol do Cabo da Roca:</th>
+                <td>Sintra (Lisboa)</td>
+                <td> em 1772</td>
+                <td> de 22 metros</td>
+                <td> de 26 milhas náuticas</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Farol do Cabo de São Vicente:</th>
+              <td>Sagres (Algrave)</td>
+              <td>1846</td>
+              <td>28 metros</td>
+              <td>32 milhas náuticas</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Farol de santa Marta:</th>
+              <td>Cascais (Lisboa)</td>
+              <td>1868</td>
+              <td>20 metros</td>
+              <td>18 milhas náuticas</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Farol de Arnel</th>
+              <td>Nordeste (São Miguel, Açores)</td>
+              <td>1876</td>
+              <td>15 metros</td>
+              <td>25 milhas náuticas</td>
             </tr>
         </tbody>
         </table>
+      </section>
+
+      <section id="agendamento">
+        <h2>Agendar visita ás lanternas:</h2>
+        <fieldset>
+          <legend>O formulário de reserva deve recolher:</legend><br/>
+          <div>
+            <label for="nome">Nome completo do responsável:</label>
+            <input 
+            type="text"
+            id="nome"
+            name="nome-completo"
+            required
+            placeholder="digite aqui... ."
+            autofocus
+            minlength="3"
+            />
+          </div>
+
+          <div>
+        <label for="email">Coreio Eletrónico.</label>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Ex.: maria@gmail.com"
+        />
+      </div>
+
+       <div>
+       <label for="contacto">Telefone</label>
+       <input
+       type="number"
+       id="contacto"
+       name="telefone"
+       required
+       minlength="9" 
+       maxlength="9"
+       pattern="[0-9]{9}"
+       placeholder="(000) 000 00 00"
+       />
+       </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>seleção obrigatório entre:</legend>
+       <div>
+        <label for="categoria">Farol pretendido</label>
+        <select id="categoria" name="categoria" riquered>
+          <option value="farol da barra" selected>Farol da barra</option>
+          <option value="farol-do-cabo-da-roca" selected>Farol do cabo da roca</option>
+          <option value="farol-de-santa-marta" selected>Farol de Santa Marta</option>
+          <option value="farol-de-sao-vicente selectd"> Farol de São Vicente</option>
+        </select>
+       </div>
+    
+        <p>período horário preferencial</p>
+        <div>
+          <input 
+          type="radio"
+          id="turno"
+          name="turno"
+          value="15"
+       </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
       </section>
     </main>
   </body>
