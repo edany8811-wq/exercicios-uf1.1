@@ -5,17 +5,17 @@
     <title>Faróis de Portugal — As Grandes Sentinelas do Atlântico</title>
     <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
     <meta
-      name="discription"
+      name="description"
       content="Com mais de 800 quilómetros de costa continental e os arquipélagos dos Açores e da Madeira, Portugal possui um dos mais prestigiados e antigos sistemas de assinalamento marítimo do mundo"
     />
     <meta name="author" content="Direção de Faróis · Marinha Portuguesa" />
     <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
-    <link real="stylesheet" href="css/farois.css" />
+    <link rel="stylesheet" href="css/farois.css" />
   </head>
   <body>
     <header>
       <img
-        src="imagens/farol.svg"
+        src="imagens/farol.jpg"
         alt="farol de Portugal"
         width="240px"
         heigth="160px"
@@ -85,45 +85,64 @@
       <section id="normas">
         <h2>Normas de visita e segurança:</h2>
         <aside class="aviso">
-            <ul>
-                <li>As visitas ao interior da torre e lanterna decorrem exclusivamente às quartas-feiras à tarde, mediante marcação prévia.</li>
-                <li>O acesso ao topo do farol é feito por escadas íngremes em caracol e não é recomendado a pessoas com vertigens ou mobilidade reduzida.</li>
-                <li> É obrigatório o uso de calçado desportivo fechado e seguro (é expressamente proibido o acesso em chinelos ou calçado de salto alto).</li>      
-                <li>As crianças com idade inferior a 6 anos não podem aceder à lanterna exterior por motivos estritos de segurança.</li>
-                <li>Não é permitida a entrada de animais de companhia nas instalações técnicas dos faróis.</li>
-            </ul>
-            </aside>
+          <ul>
+            <li>
+              As visitas ao interior da torre e lanterna decorrem exclusivamente
+              às quartas-feiras à tarde, mediante marcação prévia.
+            </li>
+            <li>
+              O acesso ao topo do farol é feito por escadas íngremes em caracol
+              e não é recomendado a pessoas com vertigens ou mobilidade
+              reduzida.
+            </li>
+            <li>
+              É obrigatório o uso de calçado desportivo fechado e seguro (é
+              expressamente proibido o acesso em chinelos ou calçado de salto
+              alto).
+            </li>
+            <li>
+              As crianças com idade inferior a 6 anos não podem aceder à
+              lanterna exterior por motivos estritos de segurança.
+            </li>
+            <li>
+              Não é permitida a entrada de animais de companhia nas instalações
+              técnicas dos faróis.
+            </li>
+          </ul>
+        </aside>
       </section>
 
       <section id="tabela">
         <h2>Dados Técnicos das Principais Sentinelas:</h2>
         <table>
-            <caption>Comparação dos principais faróis portugueses</caption>
-        <thead>
+          <caption>
+            Comparação dos principais faróis portugueses
+          </caption>
+          <thead>
             <tr>
-               <th scope="col">Farol</th>
+              <th scope="col">Farol</th>
               <th scope="col">Localização</th>
               <th scope="col">Inauguração</th>
               <th scope="col">Altura</th>
               <th scope="col">Alcance</th>
             </tr>
-        </thead>
-        
-        <tbody>
+          </thead>
+
+          <tbody>
             <tr>
-                <th scope="row">Farol da Barra:</th>
-                <td>Ílha (Aveiro)</td>
-                <td> 1893</td>
-                <td>62 metros</td>
-                <td>23 milhas náuticas</td>
+              <th scope="row">Farol da Barra:</th>
+              <td>Ílha (Aveiro)</td>
+              <td>1893</td>
+              <td>62 metros</td>
+              <td>23 milhas náuticas</td>
             </tr>
 
             <tr>
-                <th scope="row">Farol do Cabo da Roca:</th>
-                <td>Sintra (Lisboa)</td>
-                <td> em 1772</td>
-                <td> de 22 metros</td>
-                <td> de 26 milhas náuticas</td>
+              <th scope="row">Farol do Cabo da Roca:</th>
+              <td>Sintra (Lisboa)</td>
+              <td>1772</td>
+              <td>22 metros</td>
+              <td>26 milhas náuticas</td>
             </tr>
 
             <tr>
@@ -149,77 +168,144 @@
               <td>15 metros</td>
               <td>25 milhas náuticas</td>
             </tr>
-        </tbody>
+          </tbody>
         </table>
       </section>
 
       <section id="agendamento">
         <h2>Agendar visita ás lanternas:</h2>
         <fieldset>
-          <legend>O formulário de reserva deve recolher:</legend><br/>
+          <legend>O formulário de reserva deve recolher:</legend>
+          <br />
           <div>
-            <label for="nome">Nome completo do responsável:</label>
-            <input 
-            type="text"
-            id="nome"
-            name="nome-completo"
-            required
-            placeholder="digite aqui... ."
-            autofocus
-            minlength="3"
+            <label for="nome">Nome completo do responsável:</label><br />
+            <input
+              type="text"
+              id="nome"
+              name="nome-completo"
+              required
+              placeholder="digite aqui... ."
+              autofocus
+              minlength="3"
             />
           </div>
 
           <div>
-        <label for="email">Coreio Eletrónico.</label>
-        <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="Ex.: maria@gmail.com"
-        />
-      </div>
+            <label for="email">Coreio Eletrónico.</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Ex.: maria@gmail.com"
+            />
+          </div>
 
-       <div>
-       <label for="contacto">Telefone</label>
-       <input
-       type="number"
-       id="contacto"
-       name="telefone"
-       required
-       minlength="9" 
-       maxlength="9"
-       pattern="[0-9]{9}"
-       placeholder="(000) 000 00 00"
-       />
-       </div>
-      </fieldset>
+          <div>
+            <label for="contacto">Telefone</label><br />
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              required
+              pattern="[0-9]{9}"
+              placeholder="(000) 000 00 00"
+            />
+          </div>
+        </fieldset>
 
-      <fieldset>
-        <legend>seleção obrigatório entre:</legend>
-       <div>
-        <label for="categoria">Farol pretendido</label>
-        <select id="categoria" name="categoria" riquered>
-          <option value="farol da barra" selected>Farol da barra</option>
-          <option value="farol-do-cabo-da-roca" selected>Farol do cabo da roca</option>
-          <option value="farol-de-santa-marta" selected>Farol de Santa Marta</option>
-          <option value="farol-de-sao-vicente selectd"> Farol de São Vicente</option>
-        </select>
-       </div>
-    
-        <p>período horário preferencial</p>
+        <fieldset>
+          <legend>seleção obrigatório entre:</legend>
+          <div>
+            <label for="categoria">Farol pretendido</label><br />
+            <select id="categoria" name="categoria" riquered>
+              <option value="farol da barra" selected>Farol da barra</option>
+              <option value="farol-do-cabo-da-roca" selected>
+                Farol do cabo da roca
+              </option>
+              <option value="farol-de-santa-marta" selected>
+                Farol de Santa Marta
+              </option>
+              <option value="farol-de-sao-vicente selectd">
+                Farol de São Vicente
+              </option>
+            </select>
+          </div>
+
+          <div>
+            <label for="data">Data pretendida</label><br />
+            <input type="date" id="data" name="data" required />
+          </div>
+
+          <div>
+            <legende>Período horário preferencial</legende><br />
+            <input type="radio" id="turno" name="turno" value="14h00-15h30" />
+            <label for="turno">Turno das: 14h00-15h30.</label><br />
+          </div>
+
+          <div>
+            <input type="radio" id="turno" name="turno" value="15h30-17h00" />
+            <label for="turno">Turno das: 15h30-17h00.</label><br />
+          </div>
+
+          <div>
+            <label for="participantes">Número de participantes:</label><br />
+            <input
+              type="number"
+              id="participantes"
+              name="participantes"
+              min="1"
+              max="10"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="observacoes"
+              >Necessidades específicas ou observações</label
+            ><br />
+            <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+          </div>
+
+          <div>
+            <label for="autorizacao">Aceito as normas de segurança.</label
+            ><br />
+            <input type="checkbox" id="aceito" name="aceito" required />
+          </div>
+        </fieldset>
+
         <div>
-          <input 
-          type="radio"
-          id="turno"
-          name="turno"
-          value="15"
-       </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
-                                                                                                                                                                                                                                                                                                                                                                                                                                   
+          <fieldset>
+            <button type="submit">Reserva</button>
+            <button type="reset">Reposição do formulário</button>
+          </fieldset>
+        </div>
+      </section>
 
+      <section id="contacto">
+        <h2>Apoio ao Visitante e Contactos Institucionais:</h2>
+        <p><strong>Direção de Faróis — Marinha Portuguesa</strong></p>
+        <p>Morada: Estrada do Farol, 2770-058 Paço de Arcos</p>
+        <p>
+          E-mail para visitas:
+          <a href="mailto:dfarois.visitas@marinha.pt"
+            >dfarois.visitas@marinha.pt</a
+          >
+        </p>
+        <p>
+          Portal oficial:
+          <a
+            href="https://www.marinha.pt"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Marinha Portuguesa
+          </a>
+        </p>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 Direção de Faróis · Marinha Portuguesa</p>
+    </footer>
   </body>
 </html>
