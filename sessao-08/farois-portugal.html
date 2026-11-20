@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Faróis de Portugal — As Grandes Sentinelas do Atlântico</title>
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Com mais de 800 quilómetros de costa continental e os arquipélagos dos Açores e da Madeira, Portugal possui um dos mais prestigiados e antigos sistemas de assinalamento marítimo do mundo"
@@ -18,7 +18,7 @@
         src="imagens/farol.jpg"
         alt="farol de Portugal"
         width="240px"
-        heigth="160px"
+        height="160px"
       />
 
       <h1>Faróis de Portugal</h1>
@@ -36,11 +36,11 @@
 
       <nav>
         <ul>
-          <li><a href="destaques">Destaques.</a></li>
-          <li><a href="normas">Normas.</a></li>
-          <li><a href="tabela">Tabela.</a></li>
-          <li><a href="agendamento">Agendamento.</a></li>
-          <li><a href="contactos">Contactos.</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#normas">Normas</a></li>
+          <li><a href="#tabela">Tabela</a></li>
+          <li><a href="#agendamento">Agendamento</a></li>
+          <li><a href="#contactos">Contactos</a></li>
         </ul>
       </nav>
     </header>
@@ -172,7 +172,9 @@
         </table>
       </section>
 
+     
       <section id="agendamento">
+        <form action="#" method="post">
         <h2>Agendar visita ás lanternas:</h2>
         <fieldset>
           <legend>O formulário de reserva deve recolher:</legend>
@@ -202,13 +204,14 @@
           </div>
 
           <div>
-            <label for="contacto">Telefone</label><br />
+            <label for="telefone">Telefone</label><br />
             <input
               type="tel"
               id="telefone"
               name="telefone"
               required
               pattern="[0-9]{9}"
+              title="Introduza um número de telefone com 9 algarismos"
               placeholder="(000) 000 00 00"
             />
           </div>
@@ -218,15 +221,15 @@
           <legend>seleção obrigatório entre:</legend>
           <div>
             <label for="categoria">Farol pretendido</label><br />
-            <select id="categoria" name="categoria" riquered>
+            <select id="categoria" name="categoria" required>
               <option value="farol da barra" selected>Farol da barra</option>
-              <option value="farol-do-cabo-da-roca" selected>
+              <option value="farol-do-cabo-da-roca" >
                 Farol do cabo da roca
               </option>
-              <option value="farol-de-santa-marta" selected>
+              <option value="farol-de-santa-marta" >
                 Farol de Santa Marta
               </option>
-              <option value="farol-de-sao-vicente selectd">
+              <option value="farol-de-sao-vicente">
                 Farol de São Vicente
               </option>
             </select>
@@ -238,13 +241,13 @@
           </div>
 
           <div>
-            <legende>Período horário preferencial</legende><br />
+            <legend>Período horário preferencial</legend><br />
             <input type="radio" id="turno" name="turno" value="14h00-15h30" />
             <label for="turno">Turno das: 14h00-15h30.</label><br />
           </div>
 
           <div>
-            <input type="radio" id="turno" name="turno" value="15h30-17h00" />
+            <input type="radio" id="turno2" name="turno" value="15h30-17h00" />
             <label for="turno">Turno das: 15h30-17h00.</label><br />
           </div>
 
@@ -268,21 +271,22 @@
           </div>
 
           <div>
-            <label for="autorizacao">Aceito as normas de segurança.</label
+            <label for="aceito">Aceito as normas de segurança.</label
             ><br />
             <input type="checkbox" id="aceito" name="aceito" required />
           </div>
         </fieldset>
 
-        <div>
+        <div class="acoes">
           <fieldset>
-            <button type="submit">Reserva</button>
-            <button type="reset">Reposição do formulário</button>
+            <button type="submit" class="botao">Reserva</button>
+            <button type="reset" class="botao botao-secundario">Reposição do formulário</button>
           </fieldset>
         </div>
       </section>
+      </form>
 
-      <section id="contacto">
+      <section id="contactos">
         <h2>Apoio ao Visitante e Contactos Institucionais:</h2>
         <p><strong>Direção de Faróis — Marinha Portuguesa</strong></p>
         <p>Morada: Estrada do Farol, 2770-058 Paço de Arcos</p>

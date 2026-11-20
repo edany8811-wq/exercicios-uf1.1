@@ -10,10 +10,7 @@
     />
     <meta name="author" content="Daniela Tavares" />
     <link rel="icon" type="image/svg+xml" href="imagens/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css"/>
   </head>
 
   <body>
@@ -144,7 +141,7 @@
         <h2>Partilhe uma sugestão sobre a cidade:</h2>
         <p>Sugere uma atividade ou lugar que você gostaria de ver na cidade.</p>
 
-        <form action="#" method="post">
+        <form id="formulario-sugestoes" method="post">
           <fieldset>
             <legend>A sua identificação</legend>
             <div>
@@ -237,8 +234,8 @@
               <input id="autorizo" name="autorizo" type="checkbox" required />
             </div>
           </fieldset>
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpar</button><br />
+          <button type="submit" class="batao">Enviar</button>
+          <button type="reset" class="batao">Limpar</button><br />
         </form>
       </section>
     </main>

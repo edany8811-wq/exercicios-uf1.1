@@ -94,7 +94,13 @@ Respondam às seguintes questões por palavras vossas:
 
 3. Rádios vs Checkboxes:
    Em que circunstâncias devemos utilizar botões de rádio (`type="radio"`) e em que casos devemos optar por caixas de verificação (`type="checkbox"`)? Qual é a regra técnica para que vários botões de rádio pertençam ao mesmo grupo de escolha exclusiva?
-   Resposta: [O placeholder é apenas uma dica cinzenta escrita dentro do campo, que desaparece assim que começamos a escrever — a meio do preenchimento, a pessoa já não vê o que lhe foi pedido. Além disso, os leitores de ecrã usados por pessoas cegas nem sempre anunciam o placeholder e o texto cinzento tem pouco contraste, o que dificulta a leitura a quem tem baixa visão. A <label> é uma etiqueta permanente, sempre visível e corretamente associada ao campo. E há um comportamento muito útil: quando a label está bem configurada (com o for igual ao id do campo), clicar no texto da etiqueta faz o cursor saltar diretamente para dentro do campo — e numa checkbox ou num rádio, clicar no texto até marca a opção, o que ajuda muito em ecrãs pequenos.]
+   Resposta: [Na construção de interfaces digitais, cada componente carrega uma promessa implícita ao usuário. Pequenos detalhes visuais e de comportamento determinam se uma pessoa preenche um formulário com fluidez ou fica em dúvida sobre o que o sistema espera dela. Entre os controles mais fundamentais da web estão os botões de rádio (type="radio") e as caixas de verificação (type="checkbox"), dois elementos simples na aparência, mas regidos por lógicas distintas.
+
+O botão de rádio nasce para cenários de exclusividade. Quando apresentamos opções como formas de pagamento, planos de assinatura ou faixas de tamanho, estamos dizendo ao usuário que aquelas alternativas competem entre si: escolher uma significa abrir mão das demais. Tecnicamente, essa exclusividade depende do compartilhamento do mesmo atributo name entre os inputs do grupo — uma regra simples, porém decisiva, que garante ao navegador o controle de desmarcar o item anterior sempre que outro é selecionado.
+
+Já a caixa de verificação atende a uma lógica cumulativa e independente. Em filtros de busca, preferências de notificação ou na seleção de múltiplos itens de uma lista, o usuário pode querer marcar várias opções, apenas uma ou nenhuma. Além disso, o checkbox resolve com naturalidade escolhas isoladas de ativar ou desativar — como aceitar termos ou manter a sessão iniciada — justamente porque permite alternar o estado livremente, algo que um botão de rádio solto não faz bem.
+
+No fim, projetar boas interfaces passa por alinhar a mecânica do componente ao modelo mental de quem usa. Quando respeitamos a diferença entre escolher um entre vários e marcar tudo o que fizer sentido, o formulário deixa de ser um obstáculo e se torna uma conversa direta.]
 
 ---
 

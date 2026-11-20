@@ -214,3 +214,10 @@ textarea:focus {
 address {
   font-style: normal; 
    }
+
+   #agendamento {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-top: 2rem;
+}
